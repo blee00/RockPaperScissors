@@ -1,14 +1,12 @@
 const roshambo = ["rock", "paper", "scissors"];
 
 function getComputerChoice() {
-    roshambo[Math.floor(Math.random()*3)];
+    return roshambo[Math.floor(Math.random()*3)];
 };
 
-let computerSelection = getComputerChoice;
-
-let playSelection = prompt('Type rock, paper, or scissors in order to start', '');
-
 function playRound(playSelection, computerSelection) {
+    playSelection = prompt('Type your choice of RPS against the computer', '');
+    computerSelection = getComputerChoice();
     if (playSelection.toLowerCase() === roshambo[0]) {
         if (computerSelection === roshambo[1]) {
             console.log(`You lose! ${roshambo[1]} beats ${roshambo[0]}.`);
@@ -35,4 +33,12 @@ function playRound(playSelection, computerSelection) {
         }
     };
 };
+
+getComputerChoice();
+playRound();
+
+
+
+
+
 
