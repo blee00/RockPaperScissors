@@ -40,13 +40,6 @@ function playRound(playSelection, computerSelection) {
       });
     };
 
-
-
-
-//   getComputerChoice();
-//   choice();
-//   console.log(getComputerChoice());
-
 getComputerChoice();
 playRound();
 
